@@ -96,7 +96,7 @@ func (m *Message) Bytes() (ret []byte, err error) {
 	}
 	ret = append(ret, bitmap...)
 	ret = append(ret, data...)
-	fmt.Printf("bitmap % x\n", bitmap)
+    fmt.Printf("bitmap % x\n", bitmap)
 	fmt.Printf("data % x\n", data)
 	return ret, nil
 }
