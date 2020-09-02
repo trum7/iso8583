@@ -51,8 +51,9 @@ func (m *Message) Bytes() (ret []byte, err error) {
 	if err != nil {
 		return nil, err
 	}
+	fmt.Printf("ret: % x\n", ret)
 	ret = append(ret, mtiBytes...)
-
+	fmt.Printf("mtyBytes: % x\n", mtiBytes)
 	// generate bitmap and fields:
 	fields := parseFields(m.Data)
 
